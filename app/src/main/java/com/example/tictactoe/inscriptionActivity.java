@@ -21,7 +21,7 @@ public class inscriptionActivity extends AppCompatActivity {
     }
     public void submitButtonClick(View view){
         String NomJoueur1 = joueur1.getText().toString();
-        String NomJoueur2 = joueur1.getText().toString();
+        String NomJoueur2 = joueur2.getText().toString();
 
         Intent intent = new Intent(this, GameInterface.class);
         intent.putExtra("NOM_JOUEURS",new String[] {NomJoueur1,NomJoueur2});

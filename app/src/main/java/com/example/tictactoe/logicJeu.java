@@ -30,7 +30,7 @@ public class logicJeu {
             }
         }
         for(int c=0 ;c<3; c++){
-            if(tabJeu[c][0]==tabJeu[c][1] && tabJeu[c][0]==tabJeu[c][2] && tabJeu[c][0]!=0){
+            if(tabJeu[0][c]==tabJeu[1][c] && tabJeu[0][c]==tabJeu[2][c] && tabJeu[0][c]!=0){
                 victType = new int[] {0,c,2};
                 estGagnant = true;
             }
@@ -73,10 +73,10 @@ public class logicJeu {
         if(tabJeu[lig-1][col-1] == 0){
             tabJeu[lig-1][col-1] = joueur;
             if(joueur == 1){
-                playerTurn.setText((nomJoueur[1] + "'s Turn"));
+                playerTurn.setText(("tour de " + nomJoueur[1]));
             }
             else {
-                playerTurn.setText((nomJoueur[0] + "'s Turn"));
+                playerTurn.setText(("tour de " + nomJoueur[0]));
             }
 
             return true;
@@ -97,7 +97,7 @@ public class logicJeu {
         btnNouv.setVisibility(View.GONE);
         btnCom.setVisibility(View.GONE);
 
-        playerTurn.setText((nomJoueur[1] + " 's Turn"));
+        playerTurn.setText(("tour de " + nomJoueur[1]));
     }
 
     public void setBtnCom(Button btnCom) {

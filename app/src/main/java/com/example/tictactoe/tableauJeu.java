@@ -76,11 +76,11 @@ public class tableauJeu extends View {
                         ligneVict = true;
                         invalidate();
                     }
-                    if(game.getJoueur() % 2 == 0){
-                        game.setJoueur(game.getJoueur() - 1);
+                    if(game.getJoueur()%2==0){
+                        game.setJoueur(game.getJoueur()-1);
                     }
                     else{
-                        game.setJoueur(game.getJoueur() + 1);
+                        game.setJoueur(game.getJoueur()+1);
                     }
                 }
             }

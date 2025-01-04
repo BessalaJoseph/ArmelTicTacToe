@@ -25,7 +25,7 @@ public class GameInterface extends AppCompatActivity {
         btnCom.setVisibility(View.GONE);
         String[] nomJoueur = getIntent().getStringArrayExtra("NOM_JOUEURS");
         if(nomJoueur != null){
-            playerTurn.setText((nomJoueur[0] + "'s Turn"));
+            playerTurn.setText(("tour de " + nomJoueur[0]));
         }
 
         TableauJeu = findViewById(R.id.tableauJeu);
