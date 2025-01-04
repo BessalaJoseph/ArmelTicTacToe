@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="btn">commencer</string>
+    <string name="hint">Entrer votre nom</string>
+</resources>

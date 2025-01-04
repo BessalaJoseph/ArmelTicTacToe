@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="tableauJeu">
+        <attr name="couleurtab" format="color"/>
+        <attr name="couleurO" format="color"/>
+        <attr name="couleurX" format="color"/>
+        <attr name="couleurlignVict" format="color"/>
+    </declare-styleable>
+</resources>
